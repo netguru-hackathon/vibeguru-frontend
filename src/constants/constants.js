@@ -7,5 +7,6 @@ if (__DEVELOPMENT__) {
 
 module.exports = {
   APIEndpoints: {
+    PROJECTS: APIRoot + '/api/projects',
   }
 };
