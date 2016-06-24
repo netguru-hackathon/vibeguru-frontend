@@ -1,0 +1,48 @@
+.project-details__name {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.project-details__summary {
+  h3 { margin: 10px 0; }
+}
+
+.project-photos {
+  h3 {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .project-photos__photo {
+    text-align: center;
+    display: inline-block;
+    margin: 5px 10px;
+
+    img {
+      text-align: center;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.project-details__info {
+  text-align: center;
+  font-size: 12px;
+}
+
+.project-details__charts {
+  display: block;
+}
+
+.project-details__chart {
+  margin-right: 20px;
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}

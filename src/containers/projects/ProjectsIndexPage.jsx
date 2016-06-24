@@ -14,8 +14,62 @@ export default class ProjectsIndexPage extends React.Component {
     // const { isFetching, projects } = this.props
 
     var projects = [
-      { name: 111 },
-      { name: 222 }
+      {
+        "_id": "576d2c898babc155b634de62",
+        "url": "test_url",
+        "name": "test_name",
+        "emotions": {
+          "smile": 1.527,
+          "surprise": 2,
+          "negative": 10.303,
+          "attention": 100
+        },
+        "vibes": [
+          {
+            "_id": "576d2cc6d88ec95ab6715754",
+            "image": "http://m.aszdziennik.pl/984fc8c0fda0a9894c282c094986e12d,640,0,0,0.jpg",
+            "emotions": {
+              "smile": 1.527,
+              "surprise": 2,
+              "negative": 10.303,
+              "attention": 100
+            },
+          },
+          {
+            "_id": "576d2cd5d88ec95ab6715755",
+            "image": "http://m.aszdziennik.pl/984fc8c0fda0a9894c282c094986e12d,640,0,0,0.jpg",
+            "emotions": {
+              "smile": 1.527,
+              "surprise": 2,
+              "negative": 10.303,
+              "attention": 100
+            },
+          }
+        ]
+      },
+      {
+        "_id": "576d2c9fd88ec95ab6715753",
+        "url": "test_url2",
+        "name": "name2",
+        "emotions": {
+          "smile": 10,
+          "surprise": 20,
+          "negative": 1.303,
+          "attention": 60
+        },
+        "vibes": [
+          {
+            "_id": "576d2c9fd88ec95ab6715752",
+            "image": "http://m.aszdziennik.pl/984fc8c0fda0a9894c282c094986e12d,640,0,0,0.jpg",
+            "emotions": {
+              "smile": 1.527,
+              "surprise": 2,
+              "negative": 10.303,
+              "attention": 100
+            },
+          }
+        ]
+      }
     ]
 
     var projectsList, ridesPagination
