@@ -9,15 +9,11 @@ function status(response) {
   throw new Error(response.statusText)
 }
 
-export function fetchProjects(page = 1, per = 10) {
+export function fetchProjects() {
   return dispatch => {
     dispatch(projectsRequest());
     return fetch(cons.APIEndpoints.PROJECTS, {
-      method: 'get',
-      headers: {
-        'Accept': 'application/vnd.blabla-clone-v1+json',
-        'Content-Type': 'application/json'
-      }
+      method: 'get'
     })
     .then(status)
     .then(req => req.json())
@@ -35,7 +31,7 @@ export function projectsRequest() {
 export function projectsSuccess(json) {
   return {
     type: types.PROJECTS_SUCCESS,
-    projects: json.projects,
+    projects: json,
   }
 }
 

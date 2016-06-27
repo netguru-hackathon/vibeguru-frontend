@@ -9,6 +9,7 @@ export default class EmotionItems extends React.Component {
     var smilePercent = Math.round(this.props.emotions.smile * 100 / sum)
     var surprisePercent = Math.round(this.props.emotions.surprise * 100 / sum)
     var negativePercent = Math.round(this.props.emotions.negative * 100 / sum)
+    var attentionPercent = Math.round(this.props.emotions.attention)
 
     var smileSlices = [
       {
@@ -70,7 +71,7 @@ export default class EmotionItems extends React.Component {
         </div>
         <div className='project-details__chart'>
           <PieChart slices={attentionSlices} />
-          <div className='project-details__info'>Attention {this.props.emotions.attention} %</div>
+          <div className='project-details__info'>Attention {attentionPercent} %</div>
         </div>
       </div>
     )

@@ -4,10 +4,10 @@ import EmotionItems from './EmotionItems'
 
 export default class PhotoItem extends React.Component {
   render() {
-  console.log(this.props.photo);
+    var link = 'http://' + this.props.photo.image
     return (
       <div className='project-photos__photo'>
-        <img src={this.props.photo.image} />
+        <img src={link} />
         <EmotionItems emotions={this.props.photo.emotions} />
       </div>
     )
