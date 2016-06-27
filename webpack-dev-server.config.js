@@ -5,13 +5,13 @@ module.exports = {
   devServer: {
     progress: true,
     colors: true,
-    port: 8080,
+    port: 8090,
     inline: true,
     historyApiFallback: true,
   },
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:8090',
     './src/index'
   ],
   output: {
